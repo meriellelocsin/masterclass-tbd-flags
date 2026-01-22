@@ -1,0 +1,41 @@
+'use client'
+
+import { useState } from 'react'
+import Dashboard from '../src/components/Dashboard'
+import DarkModeToggle from '../src/components/DarkModeToggle'
+import AnalyticsTracker from '../src/components/AnalyticsTracker'
+import FeatureFlagStatus from '../src/components/FeatureFlagStatus'
+//import ChartSection from '../src/components/Chart'
+import '../src/App.css'
+
+export default function Home() {
+  const [isDarkMode, setIsDarkMode] = useState(false)
+
+  return (
+    <div style={{
+      minHeight: '100vh',
+      background: isDarkMode ? '#1a1a1a' : '#ffffff',
+      color: isDarkMode ? '#ffffff' : '#000000',
+      transition: 'all 0.3s ease',
+      padding: '40px 20px'
+    }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <header style={{ marginBottom: '40px', textAlign: 'center' }}>
+          <h1>🚀 Trunk-Based Development + Feature Flags Demo</h1>
+          <p style={{ opacity: 0.7 }}>
+            All features are deployed to main, controlled by environment variables
+          </p>
+        </header>
+
+        <DarkModeToggle onToggle={setIsDarkMode} />
+        
+        <Dashboard />
+        
+        
+
+        <AnalyticsTracker />
+        <FeatureFlagStatus />
+      </div>
+    </div>
+  )
+}
