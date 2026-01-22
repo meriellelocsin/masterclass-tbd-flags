@@ -9,11 +9,11 @@
  * - Quickly disable problematic features
  */
 
+/*
 export const featureFlags = {
-  newDashboard: process.env.NEXT_PUBLIC_FEATURE_NEW_DASHBOARD === 'true',
+  //newDashboard: process.env.NEXT_PUBLIC_FEATURE_NEW_DASHBOARD === 'true',
   darkMode: process.env.NEXT_PUBLIC_FEATURE_DARK_MODE === 'true',
   analytics: process.env.NEXT_PUBLIC_FEATURE_ANALYTICS === 'true',
-  //chart: process.env.NEXT_PUBLIC_FEATURE_CHART === 'true',
 }
 
 // Helper function to check if a feature is enabled
@@ -23,3 +23,4 @@ export const isFeatureEnabled = (featureName) => {
 
 // Log current feature flags (helpful for debugging)
 console.log('🚩 Feature Flags:', featureFlags)
+*/

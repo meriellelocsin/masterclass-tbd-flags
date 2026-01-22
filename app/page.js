@@ -2,14 +2,10 @@
 
 import { useState } from 'react'
 import Dashboard from '../src/components/Dashboard'
-import DarkModeToggle from '../src/components/DarkModeToggle'
-import AnalyticsTracker from '../src/components/AnalyticsTracker'
-import FeatureFlagStatus from '../src/components/FeatureFlagStatus'
-//import ChartSection from '../src/components/Chart'
 import '../src/App.css'
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  //const [isDarkMode, setIsDarkMode] = useState(false)
 
   return (
     <div style={{
@@ -26,15 +22,6 @@ export default function Home() {
             All features are deployed to main, controlled by environment variables
           </p>
         </header>
-
-        <DarkModeToggle onToggle={setIsDarkMode} />
-        
-        <Dashboard />
-        
-        
-
-        <AnalyticsTracker />
-        <FeatureFlagStatus />
       </div>
     </div>
   )
