@@ -49,7 +49,6 @@ function DashboardNew() {
 }*/
 
 export default function Dashboard() {
-  // Feature flag determines which version to show
   return (
     <div style={{ padding: '20px', background: '#f0f0f0', borderRadius: '8px' }}>
       <h2>📊 Dashboard</h2>
