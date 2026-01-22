@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Dashboard from '../src/components/Dashboard'
-import '../src/App.css'
+import AnalyticsTracker from '../src/components/AnalyticsTracker'
 
 export default function Home() {
   //const [isDarkMode, setIsDarkMode] = useState(false)
@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div style={{
       minHeight: '100vh',
-      background: isDarkMode ? '#1a1a1a' : '#ffffff',
-      color: isDarkMode ? '#ffffff' : '#000000',
+      background: '#ffffff',
+      color: '#000000',
       transition: 'all 0.3s ease',
       padding: '40px 20px'
     }}>
@@ -21,6 +21,7 @@ export default function Home() {
           <p style={{ opacity: 0.7 }}>
             All features are deployed to main, controlled by environment variables
           </p>
+          <Dashboard />
         </header>
       </div>
     </div>
